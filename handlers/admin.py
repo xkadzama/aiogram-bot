@@ -9,5 +9,7 @@ admin = Router()
 async def admin_panel(message: Message):
 	await message.answer('Добро пожаловать в админ панель!')
 
-
+@admin.message(Command('ban'))
+async def ban_user(message: Message):
+	await message.answer('Пользователь заблокирован!')
 
