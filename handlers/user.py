@@ -14,3 +14,7 @@ async def start(message: Message):
 async def info(message: Message):
 	await message.answer('Информация о боте:')
 
+
+@user.message(Command('rules'))
+async def rules(message: Message):
+	await message.answer('Правило пользования ботом:')
