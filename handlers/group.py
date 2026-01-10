@@ -8,3 +8,8 @@ group = Router()
 @group.message(Command('start_game'))
 async def game(message: Message):
 	await message.answer('Игра началась!')
+
+
+@group.message(Command('gameover'))
+async def gameover(message: Message):
+	await message.answer('Игра закончилась!')
