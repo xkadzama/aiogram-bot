@@ -10,3 +10,4 @@ async def register(message: Message):
 	await message.answer('Регистрация')
 
 
+# PR  <- попадает ветка для проверки тимлидом
