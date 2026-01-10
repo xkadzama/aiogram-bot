@@ -9,4 +9,6 @@ payment = Router()
 async def invoice(message: Message):
 	await message.answer('Инвойс на оплату')
 
-
+@payment.message(Command('back_money'))
+async def back_money(message: Message):
+	await message.answer('Запрос на возврат средств')
