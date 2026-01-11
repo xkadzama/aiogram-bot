@@ -2,6 +2,8 @@ from aiogram.middleware import BaseMiddleware
 
 
 class LogginMiddleware(BaseMiddleware):
-	pass
+	async def __call__(self, handler, event, data):
+		await handler()
+
 
 
