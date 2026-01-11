@@ -2,6 +2,7 @@ from aiogram.middleware import BaseMiddleware
 
 
 class LogginMiddleware(BaseMiddleware):
-	pass
+	def __call__(self, *args, **kwargs):
+		pass
 
 
