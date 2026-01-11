@@ -1,2 +1,7 @@
-from aiogram import Router
+from aiogram.middleware import BaseMiddleware
+
+
+class LogginMiddleware(BaseMiddleware):
+	pass
+
 
