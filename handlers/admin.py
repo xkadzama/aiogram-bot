@@ -13,3 +13,8 @@ async def admin_panel(message: Message):
 async def ban_user(message: Message):
 	await message.answer('Пользователь заблокирован!')
 
+
+# git init - инициализация локального репозитория
+# git status - проверить не изменены ли файлы или нет ли новых
+# git add . - добавить измененные файлы в индекс
+# git
